@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ceiba_test_ios" customModuleProvider="target">
             <connections>
+                <outlet property="emptyLabel" destination="Acy-dH-tPd" id="UCC-2D-bOI"/>
                 <outlet property="searchBar" destination="K5Y-Sx-2yx" id="e2R-oU-Hwn"/>
                 <outlet property="tableView" destination="rri-Ej-IH3" id="CBg-ZB-LqO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,14 +33,22 @@
                     <rect key="frame" x="0.0" y="103" width="390" height="707"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List is empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-dH-tPd">
+                    <rect key="frame" x="132" y="408.33333333333331" width="126.33333333333331" height="27.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="K5Y-Sx-2yx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="33d-vq-oxh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rri-Ej-IH3" secondAttribute="bottom" id="W5s-5O-T8H"/>
+                <constraint firstItem="Acy-dH-tPd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yb9-si-3QO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rri-Ej-IH3" secondAttribute="trailing" id="c5R-jm-2rh"/>
                 <constraint firstItem="rri-Ej-IH3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cW9-t6-Urr"/>
+                <constraint firstItem="Acy-dH-tPd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dXn-4A-KiD"/>
                 <constraint firstItem="rri-Ej-IH3" firstAttribute="top" secondItem="K5Y-Sx-2yx" secondAttribute="bottom" id="eha-wZ-0wH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K5Y-Sx-2yx" secondAttribute="trailing" id="lSL-SB-bNl"/>
                 <constraint firstItem="K5Y-Sx-2yx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ylD-oU-WfT"/>
