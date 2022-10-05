@@ -11,7 +11,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var emptyLabel: UILabel!
+    
     private var searchText: String?
     private var users: [User] {
         if let searchText = searchText {
@@ -75,6 +76,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 extension HomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.searchText = searchText.isEmpty ? nil : searchText
+        self.emptyLabel.isHidden = users.count != 0
         self.tableView.reloadData()
     }
 }
