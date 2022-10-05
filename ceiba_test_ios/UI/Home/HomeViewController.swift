@@ -79,4 +79,8 @@ extension HomeViewController: UISearchBarDelegate {
         self.emptyLabel.isHidden = users.count != 0
         self.tableView.reloadData()
     }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
 }
