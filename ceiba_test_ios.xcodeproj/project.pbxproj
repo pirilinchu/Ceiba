@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3553F13028ED2A06008777BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3553F12F28ED2A06008777BA /* HomeViewController.xib */; };
+		3553F13528ED3417008777BA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553F13328ED3417008777BA /* DetailsViewController.swift */; };
+		3553F13628ED3417008777BA /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3553F13428ED3417008777BA /* DetailsViewController.xib */; };
+		3553F13928ED3433008777BA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553F13728ED3433008777BA /* PostTableViewCell.swift */; };
+		3553F13A28ED3433008777BA /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3553F13828ED3433008777BA /* PostTableViewCell.xib */; };
 		35FF327828ED1CCA0077977A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FF327728ED1CCA0077977A /* AppDelegate.swift */; };
 		35FF327A28ED1CCA0077977A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FF327928ED1CCA0077977A /* SceneDelegate.swift */; };
 		35FF327C28ED1CCA0077977A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FF327B28ED1CCA0077977A /* ViewController.swift */; };
@@ -51,6 +55,10 @@
 		1A840D0126BC1F47768C400D /* Pods_ceiba_test_ios_ceiba_test_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ceiba_test_ios_ceiba_test_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		328802DDEED1A152CD5F9E35 /* Pods-ceiba_test_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ceiba_test_ios.release.xcconfig"; path = "Target Support Files/Pods-ceiba_test_ios/Pods-ceiba_test_ios.release.xcconfig"; sourceTree = "<group>"; };
 		3553F12F28ED2A06008777BA /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		3553F13328ED3417008777BA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3553F13428ED3417008777BA /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		3553F13728ED3433008777BA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		3553F13828ED3433008777BA /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		35FF327428ED1CCA0077977A /* ceiba_test_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ceiba_test_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FF327728ED1CCA0077977A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FF327928ED1CCA0077977A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +117,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3553F13128ED33F4008777BA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3553F13228ED33FE008777BA /* Details */,
+				35FF32A728ED1DA60077977A /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3553F13228ED33FE008777BA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3553F13328ED3417008777BA /* DetailsViewController.swift */,
+				3553F13428ED3417008777BA /* DetailsViewController.xib */,
+				3553F13728ED3433008777BA /* PostTableViewCell.swift */,
+				3553F13828ED3433008777BA /* PostTableViewCell.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		35FF326B28ED1CCA0077977A = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +162,9 @@
 		35FF327628ED1CCA0077977A /* ceiba_test_ios */ = {
 			isa = PBXGroup;
 			children = (
+				3553F13128ED33F4008777BA /* UI */,
 				35FF32B328ED1FCE0077977A /* Models */,
 				35FF32AC28ED1E840077977A /* Managers */,
-				35FF32A728ED1DA60077977A /* Home */,
 				35FF327728ED1CCA0077977A /* AppDelegate.swift */,
 				35FF327928ED1CCA0077977A /* SceneDelegate.swift */,
 				35FF327B28ED1CCA0077977A /* ViewController.swift */,
@@ -329,6 +357,8 @@
 			files = (
 				35FF32BD28ED258E0077977A /* UserTableViewCell.xib in Resources */,
 				35FF328428ED1CCB0077977A /* LaunchScreen.storyboard in Resources */,
+				3553F13628ED3417008777BA /* DetailsViewController.xib in Resources */,
+				3553F13A28ED3433008777BA /* PostTableViewCell.xib in Resources */,
 				35FF328128ED1CCB0077977A /* Assets.xcassets in Resources */,
 				3553F13028ED2A06008777BA /* HomeViewController.xib in Resources */,
 			);
@@ -460,6 +490,7 @@
 			files = (
 				35FF32B028ED1EA70077977A /* APIManager.swift in Sources */,
 				35FF32AE28ED1E9D0077977A /* DBManager.swift in Sources */,
+				3553F13928ED3433008777BA /* PostTableViewCell.swift in Sources */,
 				35FF32BC28ED258E0077977A /* UserTableViewCell.swift in Sources */,
 				35FF327C28ED1CCA0077977A /* ViewController.swift in Sources */,
 				35FF327828ED1CCA0077977A /* AppDelegate.swift in Sources */,
@@ -469,6 +500,7 @@
 				35FF32B728ED20B60077977A /* Post.swift in Sources */,
 				35FF32AA28ED1DB40077977A /* HomeViewController.swift in Sources */,
 				35FF32B228ED1EB60077977A /* UsersManager.swift in Sources */,
+				3553F13528ED3417008777BA /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

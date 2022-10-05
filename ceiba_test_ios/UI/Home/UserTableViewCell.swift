@@ -15,6 +15,7 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var phoneLabel: UILabel!
     
     var user: User = User()
+    var onButtonTap: ((User) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +29,6 @@ class UserTableViewCell: UITableViewCell {
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
-        //TODO: Goto posts
+        onButtonTap?(user)
     }
 }

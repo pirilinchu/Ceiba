@@ -42,7 +42,7 @@ class DBManager: NSObject {
         
         realm.beginWrite()
         realm.delete(realm.objects(Post.self))
-        realm.add(users)
+        realm.add(posts)
         do {
            try realm.commitWrite()
         } catch {
