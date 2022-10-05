@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ceiba_test_ios" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="K5Y-Sx-2yx" id="e2R-oU-Hwn"/>
+                <outlet property="tableView" destination="rri-Ej-IH3" id="CBg-ZB-LqO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,18 +21,28 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmZ-ZA-RnH">
-                    <rect key="frame" x="172" y="411.66666666666669" width="46" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="K5Y-Sx-2yx">
+                    <rect key="frame" x="0.0" y="47" width="390" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="flw-df-M6L"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rri-Ej-IH3">
+                    <rect key="frame" x="0.0" y="103" width="390" height="707"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="YmZ-ZA-RnH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YDp-F7-oEr"/>
-                <constraint firstItem="YmZ-ZA-RnH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="e1E-uK-kAZ"/>
+                <constraint firstItem="K5Y-Sx-2yx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="33d-vq-oxh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rri-Ej-IH3" secondAttribute="bottom" id="W5s-5O-T8H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rri-Ej-IH3" secondAttribute="trailing" id="c5R-jm-2rh"/>
+                <constraint firstItem="rri-Ej-IH3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cW9-t6-Urr"/>
+                <constraint firstItem="rri-Ej-IH3" firstAttribute="top" secondItem="K5Y-Sx-2yx" secondAttribute="bottom" id="eha-wZ-0wH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K5Y-Sx-2yx" secondAttribute="trailing" id="lSL-SB-bNl"/>
+                <constraint firstItem="K5Y-Sx-2yx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ylD-oU-WfT"/>
             </constraints>
             <point key="canvasLocation" x="140" y="21"/>
         </view>

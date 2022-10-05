@@ -4,8 +4,10 @@
 target 'ceiba_test_ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for ceiba_test_ios
+  
+  pod 'Alamofire'
+  pod 'RealmSwift'
+  pod 'ReachabilitySwift'
 
   target 'ceiba_test_iosTests' do
     inherit! :search_paths
