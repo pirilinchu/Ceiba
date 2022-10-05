@@ -43,6 +43,12 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    private func goToDetailsPage(user: User) {
+        let detailsPage = DetailsViewController()
+        detailsPage.user = user
+        present(detailsPage, animated: true)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -56,6 +62,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         cell.user = users[indexPath.row]
         cell.setupUI()
+        cell.onButtonTap = goToDetailsPage
         cell.selectionStyle = .none
         return cell
     }
